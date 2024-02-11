@@ -55,8 +55,8 @@ class FavoritesViewState extends ConsumerState<FavoritesView> with AutomaticKeep
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon( Icons.favorite_outline_sharp, size: 60, color: colors.primary ),
-            Text('Ohhh no!!', style: TextStyle( fontSize: 30, color: colors.primary)),
-            const Text('No tienes películas favoritas', style: TextStyle( fontSize: 20 )),
+            Text('Favoritos', style: TextStyle( fontSize: 30, color: colors.primary)),
+            const Text('Agrega peliculas a favoritos para verlas aqui', style: TextStyle( fontSize: 20 )),
 
             const SizedBox(height: 20),
             FilledButton.tonal(
@@ -67,9 +67,6 @@ class FavoritesViewState extends ConsumerState<FavoritesView> with AutomaticKeep
         ),
       );
     }
-
-
-
 
     return Scaffold(
       body: MovieMasonry(
